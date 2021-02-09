@@ -2,20 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="main_content">
-            <div class="slide">
+    <div class="main-content">
+        <div class="container">
+            <div class="carousel">
+                <img id="img1" src="./assets/img3.jpg" alt="" />
+                <button id="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+                <button id="next"><i class="fa fa-chevron-right"></i></button>
 
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./assets/img.jpg" style="width: 100%" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./assets/img.jpg" style="width: 100%" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./assets/img.jpg" style="width: 100%" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./assets/img.jpg" style="width: 100%" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./assets/img.jpg" style="width: 100%" />
+                    </div>
+                </div>
             </div>
             <div class="details">
+                <div class="header">Upholstered Sofa</div>
+                <div class="sub-header">
+                    Kyara Upholstered standard Bed <br />By Zipcode design
+                </div>
+                <div class="description">
+                    Anchor your living room in sophisticated style and impeccable comfort with a single addition. Perfectly balancing wood accents with fabric upholstery.
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="rating-review">
+                    <span class="checked">(5.0)</span> review based on 250
+                </div>
 
+                <a href="#" class="submit">Submit Review</a>
+                <div class="price">&#36;567</div>
+
+                <i class="status"><i class="fa fa-clock-o" aria-hidden="true"></i>Dispatched in 7 days</i>
+                <div class="button-group">
+                    <div class="btn">ADD TO CART</div>
+                    <div class="btn2">ADD TO WISHLIST</div>
+                </div>
+                </i>
             </div>
+        </div>
+        <div class="show-case">
+            <div class="block">
+                <i class="fa fa-money bold" aria-hidden="true"><span class="bold">  Secure Payment</span> </i><br> Don't worry your money is in safe place
+            </div>
+            <div class="block">
+                <i class="fa fa-truck bold" aria-hidden="true"><span class="bold">  Fast and Free delivery</span> </i><br>Home Delivery $15,For free delivery order above $250
+            </div>
+            <div class="block"><i class="fa fa-recycle bold" aria-hidden="true"><span class="bold">  Return Policy</span> </i><br>No hassle return policy</div>
         </div>
     </div>
 </body>

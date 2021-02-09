@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-content {
+    margin-top: 2.5%;
+    margin-left: 15%;
+}
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel {
+    padding: 0;
+    width: 50%;
+    height: 70%;
+}
+
+.details {
+    width: 50%;
+}
+
+.carousel img {
+    max-width: 80%;
+}
+
+#prev {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    padding: 6px 12px 6px 8px;
+    cursor: pointer;
+    background: white;
+    outline: none;
+    color: gray;
+    border: hidden;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+#next {
+    position: absolute;
+    top: 40%;
+    right: 62%;
+    border: hidden;
+    padding: 6px 8px 6px 12px;
+    cursor: pointer;
+    background: white;
+    outline: none;
+    color: gray;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+#prev:hover,
+#next:hover {
+    background: rgb(172, 150, 150);
+    color: white;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.7%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.header {
+    position: absolute;
+    top: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-header {
+    position: absolute;
+    top: 17%;
+    font-size: 15px;
+    font-weight: bolder
+}
+
+.description {
+    position: absolute;
+    max-width: 50%;
+    top: 30%;
+    font-size: 12px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 45%;
+}
+
+.checked {
+    color: rgb(56, 241, 180);
+}
+
+.rating-review {
+    position: absolute;
+    top: 50%;
+}
+
+.submit {
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    color: black;
+}
+
+.price {
+    position: absolute;
+    top: 66%;
+    font-size: 28px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.status {
+    position: absolute;
+    font-size: 12px;
+    top: 82%;
+}
+
+.button-group {
+    display: flex;
+    position: absolute;
+    top: 85%;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    margin: 3px;
+    padding: 15px;
+    font-style: normal;
+    cursor: pointer;
+    min-width: 170px;
+    text-align: center;
+}
+
+.btn2 {
+    color: black;
+    background-color: white;
+    margin: 3px;
+    padding: 15px;
+    font-style: normal;
+    border: 1px solid black;
+    cursor: pointer;
+    min-width: 170px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(222, 233, 225);
+    color: black;
+}
+
+.btn2:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.show-case {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+    margin-top: 8%;
+}
+
+.block {
+    width: 25%;
+    transition: transform .2s;
+    font-size: 12px;
+    color: grey;
+}
+
+.block:hover {
+    transform: scale(1.1);
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.block i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}

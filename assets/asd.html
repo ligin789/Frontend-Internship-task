@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Slider</title>
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 550px;
+            max-width: 550px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            outline: 5px solid black;
+        }
+        
+        .container .carousel {
+            width: 550px;
+            max-width: 550px;
+            height: 350px;
+            display: flex;
+        }
+        
+        .container .carousel img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #prev {
+            position: absolute;
+            top: 47%;
+            left: 2%;
+            padding: 11px 16px;
+            cursor: pointer;
+            background: white;
+            outline: none;
+            border: 1px solid black;
+            font-size: 19px;
+            font-weight: bold;
+            border-radius: 50%;
+            transition: .3s ease;
+        }
+        
+        #next {
+            position: absolute;
+            top: 47%;
+            right: 2%;
+            padding: 11px 16px;
+            cursor: pointer;
+            background: white;
+            outline: none;
+            border: 1px solid black;
+            font-size: 19px;
+            font-weight: bold;
+            border-radius: 50%;
+            transition: .3s ease;
+        }
+        
+        #prev:hover,
+        #next:hover {
+            background: rgb(14, 13, 13);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="carousel">
+            <img id="img1" src="https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt="">
+            <img id="img2" src="https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80" alt="">
+            <img id="img3" src="https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt="">
+        </div>
+        <button id="prev"><i class="fas fa-chevron-left"></i></button>
+        <button id="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</body>
+
+</html>
